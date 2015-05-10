@@ -1,0 +1,188 @@
+#header{
+	background-image: url('../images/1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height:668px;
+}
+
+#carousel-example-generic{
+	height:668px;
+}
+#carousel-example-generic .item{
+	height:400px;
+}
+
+#about{
+	padding-top:5%;
+	padding-bottom:5%;
+	height:auto;
+	text-align: center;
+}
+
+#line{
+	width: 40%;
+}
+
+#pencilfont{
+	 font-family: 'FutstencilSerif';
+	 font-size:72px;
+	 
+}
+
+.intro{
+	padding-top: 20%;
+	color:#fff;
+	text-align: center;
+	
+}
+
+#id , #pm , #cons , #arc , #bp{
+	
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+    margin-bottom: 0px;
+    margin-left:0px;
+    margin-right: 0px;
+}
+
+#id {
+	height:400px;
+	background-image: url('../images/id.jpg');
+	background-size: cover;
+	
+	
+}
+
+#pm {
+	height:400px;
+	background-image: url('../images/pm.jpg');
+	background-size: cover;
+	
+}
+.idoverlaybp,.idoverlayid,.idoverlaypm,.idoverlayarc{
+	
+	background-color: rgba(0,0,0,0);
+	height:100%;
+	padding-top: 0px;
+	margin-top: 0px;
+
+}
+
+/*   OVERLAY HOVER EFFECTS  */
+
+#bp:hover .idoverlaybp{
+	 transition:1s;
+	--moz-transition:1s;
+	--webkit-transition:1s;
+	--o-transition:1s;
+	
+background-color: rgba(0,0,0,0.6);
+
+
+}
+#id:hover .idoverlayid{
+	 transition:1s;
+	--moz-transition:1s;
+	--webkit-transition:1s;
+	--o-transition:1s;
+	
+background-color: rgba(0,0,0,0.6);
+
+
+}
+#pm:hover .idoverlaypm{
+	 transition:1s;
+	--moz-transition:1s;
+	--webkit-transition:1s;
+	--o-transition:1s;
+	
+background-color: rgba(0,0,0,0.6);
+
+
+}
+#arc:hover .idoverlayarc{
+	 transition:1s;
+	--moz-transition:1s;
+	--webkit-transition:1s;
+	--o-transition:1s;
+	
+background-color: rgba(0,0,0,0.6);
+
+
+}
+#cons:hover{
+	 transition:1s;
+	--moz-transition:1s;
+	--webkit-transition:1s;
+	--o-transition:1s;
+	
+background-color: rgba(0,0,0,0.6);
+
+
+}
+
+#arc {
+	height:400px;
+	background-image: url('../images/arc.jpg');
+	background-size: cover;
+}
+#bp {
+	height:400px;
+	background-image: url('../images/plan.jpg');
+	background-size: cover;
+}
+
+#servicetitle{
+	color:#FFF;
+	padding-top:20%;
+	text-align: center;
+} 
+
+/*
+.idoverlaypm,.idoverlayarc,.idoverlaybp,.idoverlaycons,.idoverlayid{
+	background-color: rgba(0,0,0,0.6);
+	height:100%;
+	padding-top: 0px;
+	margin-top: 0px;
+
+}
+
+*/
+
+
+#tiles{
+	padding-top: 0px;
+	margin-top: 0px;
+	background-color: #FFF;
+}
+
+.btncontainer{
+	text-align: center;
+}
+
+#viewbtn{
+	background-color: transparent;
+	color:#FFF;
+	border-color:#FFF;
+	border-radius: 0px;
+
+	padding:15px 15px 15px 15px;
+
+}
+
+#viewbtn:hover{
+	transform:scale(1.2);
+	background-color:#FFF;
+	color:#6F2C2C;
+	transition:0.3s;
+}
+
+.myleft{
+position: absolute;
+top: 50%;
+z-index: 5;
+display: inline-block;
+}

@@ -1,0 +1,69 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+#mynavbar{
+	background-color: transparent;
+	border-bottom-style: none;
+	 padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+    transition-delay:0.1s;
+
+
+
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FFF;
+    border-bottom-style: solid;
+    border-bottom-color: #FFF;
+    /*
+    --webkit-transition:1.0s;
+    --moz-transition:1.0s;
+    --o-transition:1.0s;
+
+    */
+
+}
+
+
+.navbar-default .navbar-brand {
+    color: #FFF;
+}
+
+@font-face {
+    font-family: 'FutstencilSerif';
+    src:url('../fonts/FutstencilSerif.ttf.woff') format('woff'),
+        url('../fonts/FutstencilSerif.ttf.svg#FutstencilSerif') format('svg'),
+        url('../fonts/FutstencilSerif.ttf.eot'),
+        url('../fonts/FutstencilSerif.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top:15px;
+    background-color:#6F2C2C;
+}
+
+footer .footer-col {
+    margin-bottom: 20px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color:black;
+}
+
+/*# sourceMappingURL=landing.css.map */
