@@ -1,5 +1,10 @@
 body{
 	font-family: 'Lato', sans-serif;
+    background-color: #fcfcfc;
+}
+
+#content{
+    margin-top: 100px;
 }
 
 #mynavbar{

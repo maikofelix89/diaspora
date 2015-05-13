@@ -5,6 +5,7 @@ $(document).ready(function(){
              $(".navbar-default").css({"border-style":"solid"});
              $(".navbar-default").css({"border-bottom-color":"#6F2C2C"});
              $(".navbar-default .navbar-nav > li > a").css({"color":"#6F2C2C"});
+             $(".navbar-brand").css({"color":"#6F2C2C"});
 
             
 
@@ -13,6 +14,7 @@ $(document).ready(function(){
         if($(window).scrollTop() < $(window).height()){
             $(".navbar-default").css({"background-color":"transparent"});
              $(".navbar-default .navbar-nav > li > a").css({"color":"#FFF"}); 
+              $(".navbar-brand").css({"color":"#FFF"}); 
               $(".navbar-default").css({"border-style":"none"});
 
         }

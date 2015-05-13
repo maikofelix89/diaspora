@@ -16,12 +16,14 @@ elixir(function(mix) {
 
     	  'bower_components/bootstrap/dist/css/bootstrap.min.css',
     	  'bower_components/animate.css/animate.min.css',
-    	  'bower_components/fontawesome/css/font-awesome.min.css',
+    	 
          
         
     	 'landing.css',
     	 
-    	 'global.css'
+    	 'global.css',
+
+    	 'portfolio.css'
 
 
 

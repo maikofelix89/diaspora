@@ -33,15 +33,27 @@
     <div class="item active">
      
       <div class="carousel-caption">
-      <h1 id="pencilfont" class="animated bounceInLeft">Diaspora Design Ltd</h1>
+      <h1 id="pencilfont" class="animated bounceInLeft">Diaspora Design Build</h1>
        <h3 class="animated bounceInDown">Architectural Firm</h3>
       </div>
     </div>
     <div class="item">
       
       <div class="carousel-caption">
-       <h1 id="pencilfont" class="animated bounceInLeft">Diaspora Design Ltd</h1>
-       <h3 class="animated bounceInDown">Architectural Firm</h3>
+       <h1 id="pencilfont" class="animated bounceInLeft">Vision</h1>
+       <h3 class="animated bounceInDown">Our vision is to be the largest and most preferred contractors in the field of
+building design, construction and civil works.</h3>
+       
+      </div>
+    </div>
+     <div class="item">
+      
+      <div class="carousel-caption">
+       <h1 id="pencilfont" class="animated bounceInLeft">Mission</h1>
+       <h3 class="animated bounceInDown">The company’s mission is to provide unique and quality property
+development opportunities to Kenyans and Kenyan investors both at home
+and in Diaspora, using the most accepted modern construction methods and
+procedures.</h3>
        
       </div>
     </div>
@@ -63,13 +75,13 @@
 
         <!-- about us section -->
 
-       <!--
+      
         <div class="row" id="about">
             <div class="container">
             <div class="col-md-12">
 
 
-            <h1>Who are we?</h1>
+            <h1>About Us</h1>
             <hr class="intro-divider" id="line" />
             <p>Diaspora Design Build Ltd an Architectural and Construction firm built on strong work ethic, attention to design and strong client relationships, has been in practise since the year 2002.</p>
 
@@ -79,11 +91,12 @@
             </div>
 
         </div>
-        -->
+    
 
         <!-- tiles section -->
 
         <div clas="row" id="tiles">
+
 				               <div class="col-md-7 animated slideInLeft" id="id">
 				                 <div class="idoverlayid">
 

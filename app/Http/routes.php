@@ -12,6 +12,12 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('/projectform', 'ProjectController@index');
+Route::get('/projects', 'ProjectController@show');
+
+Route::post('/projectform', 'ProjectController@store');
+
+/* Route::get('/portfolio', 'PortfolioController@index');
 
 Route::get('home', 'HomeController@index');
 
@@ -19,3 +25,5 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+*/

@@ -12,6 +12,9 @@
 
     <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="css/all.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css">
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -19,6 +22,10 @@
 
     <!-- google font -->
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+
+    <!-- jasny bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
 
    
 
@@ -54,9 +61,9 @@
       </ul>
      
       <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Portfolio</a></li>
+              <li><a href="/#about">About Us</a></li>
+              <li><a href="/#tiles">Services</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
               <li><a href="#">Contact us</a></li>
 
        
@@ -117,8 +124,8 @@
             </div>
         </div>
     </footer>
-
-    -->
+-->
+  
 
 <!-- end of footer section -->
 
@@ -128,5 +135,8 @@
 
     <!-- scrolling js -->
     <script type="text/javascript" src="js/scrolling.js"></script>
+
+    <!-- jasny bootstrap -->
+    <script type="text/javascript" src="bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
   </body>
 </html>
