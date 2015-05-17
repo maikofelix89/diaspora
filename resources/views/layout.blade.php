@@ -7,25 +7,32 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Diaspora Design Build</title>
 
-   
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  
+
+    <!-- materialize css -->
+    <link rel="stylesheet" type="text/css" href="../css/materialize.css">
+
 
     <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/all.css">
+    
+
+    
 
     <!-- font awesome -->
-    <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/fontawesome/css/font-awesome.min.css">
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
     <!-- google font -->
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 
     <!-- jasny bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
 
    
 
@@ -40,103 +47,77 @@
     <![endif]-->
   </head>
   <body>
-     <nav class="navbar navbar-default navbar-fixed-top" id="mynavbar">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Diaspora Design</a>
+
+  <div class="fixed-top">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Diaspora Design</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="">About Us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="/projects">Portfolio</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Staff</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+         <li><a href="">About Us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Staff</a></li>
+      </ul>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-       
-       
-      </ul>
-     
-      <ul class="nav navbar-nav navbar-right">
-              <li><a href="/#about">About Us</a></li>
-              <li><a href="/#tiles">Services</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="#">Contact us</a></li>
-
-       
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-
-</nav>
+  </nav>
+  </div>
 
 	@yield('content')
   <!-- footer section -->
 
-  <!--
-
- <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h4>Contacts</h4>
-                        <h4>Services</h4>
-                        <h4>About Us</h4>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Social media</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook fa-2x"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus fa-2x"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa  fa-twitter
-                                fa-2x"></i></a>
-                            </li>
-                            
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble fa-2x"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                    <h3>Tel</h3>
-                        
-                        
-                    </div>
-                </div>
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Diaspora Design</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contacts</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Portfolio</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Team</a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <div class="footer-below">
+          </div>
+          <div class="footer-copyright">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy;Diaspora Design   2015
-                    </div>
-                </div>
+            © 2015 Diaspora Design Ltd
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
             </div>
-        </div>
-    </footer>
--->
-  
-
-<!-- end of footer section -->
+          </div>
+        </footer>
 
     
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+   <!-- material js -->
+   <script type="text/javascript" src="../bower_components/materialize/dist/js/materialize.min.js"></script>
     <!-- scrolling js -->
-    <script type="text/javascript" src="js/scrolling.js"></script>
+    <script type="text/javascript" src="../js/scrolling.js"></script>
 
     <!-- jasny bootstrap -->
-    <script type="text/javascript" src="bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+   <script type="text/javascript">
+
+    $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false
+    });
+  });
+
+   </script>
+
+
   </body>
 </html>

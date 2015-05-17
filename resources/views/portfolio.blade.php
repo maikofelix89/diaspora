@@ -18,7 +18,7 @@
 						</div><!-- end of thumbnail -->
 
 						<div class="ob">
-						<div class="btn btn-primary" id="viewbtn">More Details</div>
+						<a href='' class="btn btn-primary" id="viewbtn">More Details</a>
 						</div>
 					</div>
 

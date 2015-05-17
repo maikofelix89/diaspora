@@ -12,10 +12,21 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
+
+	mix.sass([
+
+		'materialize/sass/materialize.scss'
+
+
+
+
+		]);
     mix.styles([
 
-    	  'bower_components/bootstrap/dist/css/bootstrap.min.css',
+    	 
     	  'bower_components/animate.css/animate.min.css',
+
+    	 
     	 
          
         

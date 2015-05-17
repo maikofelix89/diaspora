@@ -15,9 +15,9 @@ use Request;
 
 class ProjectController extends Controller {
 
-	//
+	//lists all the projects
 
-	public function show(){
+	public function index(){
 
 		
 		$projects = Project::all();;
@@ -29,23 +29,27 @@ class ProjectController extends Controller {
 		
 	}
 
-	public function index(){
+	//shows the create project form
+
+	public function create(){
 
 		return view('admin.projectform');
 	}
 
 	public function store(Request $request){
 
+		//creates a project 
+
 
 		$destinationPath = 'images/';
 
 
 
-        $imagename = Request::file('pimage');
+       
 
-        $location = Request::file('pimage')->move($destinationPath);
+        $image = Request::file('pimage')->move($destinationPath);
 
-        $image=$destinationPath.$imagename;
+       
 
        
 
@@ -55,20 +59,30 @@ class ProjectController extends Controller {
 
 		$input['published_at'] = Carbon::now();
 
-		return $imagename;
+		
 
 
 
 
-		//Project::create(['pname'=>$input['pname'],'pimage'=>$image]);
+		Project::create(['pname'=>$input['pname'],'pimage'=>$image]);
 
-		//return redirect('projects');
+		return redirect('projects');
 
 		
 
 		
 
 		
+
+	}
+
+
+	public function show($id){
+
+		//show a specific project
+		
+		$projects= Project::FindorFail($id);
+		return view('showproject',compact('projects'));
 
 	}
 

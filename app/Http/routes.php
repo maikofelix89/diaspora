@@ -12,10 +12,14 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-Route::get('/projectform', 'ProjectController@index');
-Route::get('/projects', 'ProjectController@show');
+//Route::get('/projects', 'ProjectController@show');
+//Route::get('/projects/create', 'ProjectController@index');
 
-Route::post('/projectform', 'ProjectController@store');
+
+//Route::post('/projectform', 'ProjectController@store');
+
+
+Route::resource('projects','ProjectController');
 
 /* Route::get('/portfolio', 'PortfolioController@index');
 

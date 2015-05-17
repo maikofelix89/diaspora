@@ -4,13 +4,13 @@
 	background-attachment: fixed;
 	height:668px;
 }
+.slider .slides {
+    background-color:transparent;
+    margin: 0px;
+    height: 668px;
+}
 
-#carousel-example-generic{
-	height:668px;
-}
-#carousel-example-generic .item{
-	height:400px;
-}
+
 
 #about{
 	padding-top:5%;
@@ -35,7 +35,7 @@
 }
 
 .intro{
-	padding-top: 20%;
+	padding-top: 10%;
 	color:#fff;
 	text-align: center;
 	
@@ -190,4 +190,16 @@ position: absolute;
 top: 50%;
 z-index: 5;
 display: inline-block;
+}
+
+#projectcard{
+	
+}
+
+#cardimage img{
+	height:200px;
+}
+
+#projectdetails{
+	height:600px;
 }
