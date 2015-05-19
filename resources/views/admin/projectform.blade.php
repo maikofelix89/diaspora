@@ -69,6 +69,7 @@
    
 
   {!!  Form::label('imglbl','Project Image:',['for'=>'icon_prefix'])  !!}
+  
   </div>
   <div class="col m8">
 

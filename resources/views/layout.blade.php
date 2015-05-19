@@ -16,6 +16,8 @@
 
     <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="../css/all.css">
+
+
     
 
     
@@ -24,8 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../bower_components/fontawesome/css/font-awesome.min.css">
     
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    
 
     <!-- google font -->
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -51,13 +52,13 @@
   <div class="fixed-top">
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Diaspora Design</a>
+      <a href="/" class="brand-logo">Diaspora Design</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="">About Us</a></li>
         <li><a href="">Services</a></li>
         <li><a href="/projects">Portfolio</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
         <li><a href="">Staff</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
@@ -101,22 +102,34 @@
         </footer>
 
     
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
    <!-- material js -->
    <script type="text/javascript" src="../bower_components/materialize/dist/js/materialize.min.js"></script>
     <!-- scrolling js -->
     <script type="text/javascript" src="../js/scrolling.js"></script>
 
+
+
     <!-- jasny bootstrap -->
     <script type="text/javascript" src="../bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
    <script type="text/javascript">
+   
 
     $(document).ready(function(){
+
     $('.collapsible').collapsible({
       accordion : false
     });
   });
 
+
+        
+
    </script>
+
+
 
 
   </body>

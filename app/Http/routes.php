@@ -16,7 +16,10 @@ Route::get('/', 'WelcomeController@index');
 //Route::get('/projects/create', 'ProjectController@index');
 
 
-//Route::post('/projectform', 'ProjectController@store');
+Route::get('contactus','ContactusController@index');
+
+
+Route::post('/projectform', 'ProjectController@store');
 
 
 Route::resource('projects','ProjectController');
@@ -26,7 +29,7 @@ Route::resource('projects','ProjectController');
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
+	'auth' => 'Auth\AuthController',z
 	'password' => 'Auth\PasswordController',
 ]);
 

@@ -6,7 +6,7 @@ class Project extends Model {
 
 	//
 
-	protected $fillable = ['pname', 'pimage', 'desc'];
+	protected $fillable = ['pname', 'pimage','pcost','pdesc'];
 
 
 	

@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'FutstencilSerif';
+    src:url('/assets/fonts/FutstencilSerif.ttf.woff') format('woff'),
+        url('/assets/fonts/assets/FutstencilSerif.ttf.svg#FutstencilSerif') format('svg'),
+        url('/assets/fonts/FutstencilSerif.ttf.eot'),
+        url('/assets/fonts/FutstencilSerif.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 #header{
 	background-image: url('../images/1.jpg');
 	background-size: cover;
@@ -202,4 +212,13 @@ display: inline-block;
 
 #projectdetails{
 	height:600px;
+}
+
+
+#location{
+	text-align: center;
+}
+
+#locationimage{
+	padding-top: 10%;
 }

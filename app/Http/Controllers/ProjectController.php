@@ -33,7 +33,7 @@ class ProjectController extends Controller {
 
 	public function create(){
 
-		return view('admin.projectform');
+		return view('projectform');
 	}
 
 	public function store(Request $request){
@@ -64,7 +64,7 @@ class ProjectController extends Controller {
 
 
 
-		Project::create(['pname'=>$input['pname'],'pimage'=>$image]);
+		Project::create(['pname'=>$input['pname'],'pimage'=>$image,'pcost'=>$input['pcost'],'pdesc'=>$input['pdesc']]);
 
 		return redirect('projects');
 

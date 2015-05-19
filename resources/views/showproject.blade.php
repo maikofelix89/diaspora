@@ -30,19 +30,18 @@
   <ul class="collapsible popout" data-collapsible="accordion">
     <li>
       <div class="collapsible-header active">About Project </div>
-      <div class="collapsible-body"><p>4 Bedroomed mansion with detached double garage, servant
-quarter and Guest wing at Runda, Nairobi.</p></div>
+      <div class="collapsible-body"><p>{{ $projects->pdesc}}</p></div>
     </li>
     <li>
       <div class="collapsible-header ">Client</div>
-      <div class="collapsible-body"><p>Joseph F.Adewa</p></div>
+      <div class="collapsible-body"><p></p></div>
     </li>
     <li>
     <li>
       <div class="collapsible-header">Year and Cost</div>
       <div class="collapsible-body">
-        <p>Year:2012</p>
-      <p>Cost:12 Million</p>
+        <p></p>
+      <p>{{ $projects->pcost}}</p>
       </div>
     </li>
     <li>

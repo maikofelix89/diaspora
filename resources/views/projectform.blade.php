@@ -12,10 +12,11 @@
 
 @foreach($errors->all() as $error)
 
+
 <li>{{ $error  }}</li>
 
-@endforeach
 
+@endforeach
 
 
 </ul></span>
@@ -56,6 +57,42 @@
   </div>
 
   </div>
+
+  <div class="row">
+
+
+  <div class="col m8">
+
+  
+  
+     <div class="input-field">
+ 
+   {!!  Form::label('costlbl','Project Cost:',['for'=>'icon_prefix'])  !!}
+
+   {!!  Form::text('pcost',null,['class' => 'form-control validate'])  !!}
+  </div>
+
+  </div>
+
+  </div>
+
+  <div class="row">
+
+
+  <div class="col m8">
+
+  
+  
+     <div class="input-field">
+ 
+  {!!  Form::label('desclbl','Decription:',['for'=>'icon_prefix'])  !!}
+
+  {!!  Form::textarea('pdesc',null,['class' => 'materialize-textarea'])  !!}
+  </div>
+
+  </div>
+
+  </div>
              
               
 <div class="row">
@@ -69,6 +106,7 @@
    
 
   {!!  Form::label('imglbl','Project Image:',['for'=>'icon_prefix'])  !!}
+  
   </div>
   <div class="col m8">
 
