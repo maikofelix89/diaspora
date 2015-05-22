@@ -228,6 +228,27 @@ display: inline-block;
 #locationimage{
 	padding-top: 10%;
 }
+
+#adminactions{
+	text-align: center;
+}
+
+#adminbtn{
+	transition:0.5s;
+}
+
+#adminbtn:hover{
+	transform:scale(1.2);
+}
+
+#headtext{
+	color:#F58220;
+}
+
+#staffimage img{
+	height:250px;
+
+}
 body{
 	font-family: 'Lato', sans-serif;
    

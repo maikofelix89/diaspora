@@ -18,11 +18,23 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('contactus','ContactusController@index');
 
+Route::Resource('staff','StaffController');
 
+Route::get('dashboard','ProjectController@board');
+
+//post forms
 Route::post('/projectform', 'ProjectController@store');
+
+Route::post('/projectcatform', 'ProjectCategoriesController@store');
+
+Route::post('/stafform', 'StaffController@store');
+
 
 
 Route::resource('projects','ProjectController');
+
+
+Route::resource('projCategories','ProjectCategoriesController');
 
 /* Route::get('/portfolio', 'PortfolioController@index');
 

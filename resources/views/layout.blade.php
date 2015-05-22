@@ -47,7 +47,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body id="mobile-demo">
+  
 
   <div class="fixed-top">
   <nav>
@@ -59,14 +60,15 @@
         <li><a href="">Services</a></li>
         <li><a href="/projects">Portfolio</a></li>
         <li><a href="/contactus">Contact Us</a></li>
-        <li><a href="">Staff</a></li>
+        <li><a href="/staff">Staff</a></li>
       </ul>
-      <ul class="side-nav" id="mobile-demo">
+      
+      <ul class="side-nav" id="">
          <li><a href="">About Us</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">Portfolio</a></li>
         <li><a href="">Contact Us</a></li>
-        <li><a href="">Staff</a></li>
+        <li><a href="/staff">Staff</a></li>
       </ul>
     </div>
   </nav>
@@ -122,9 +124,13 @@
     $('.collapsible').collapsible({
       accordion : false
     });
+
+     $('select').material_select();
+
+
   });
 
-
+ 
         
 
    </script>

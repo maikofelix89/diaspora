@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProjectsTable extends Migration {
+class CreateStaffTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,18 +12,16 @@ class CreateProjectsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('projects', function(Blueprint $table)
+		Schema::create('staff', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->text('pname');
-			$table->text('cat_name');
-			$table->text('pdesc');
-			$table->text('pcost');
-			$table->text('pimage');
+			$table->text('name');
+			$table->text('staffimage');
+			$table->text('position');
+			$table->text('profqualif');
+			$table->text('acadqualif');
+			$table->text('bio');
 			$table->timestamps();
-			
-                 
-                  
 		});
 	}
 
@@ -34,7 +32,7 @@ class CreateProjectsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('projects');
+		Schema::drop('staff');
 	}
 
 }

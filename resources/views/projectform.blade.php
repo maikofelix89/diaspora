@@ -63,6 +63,34 @@
 
   <div class="col m8">
 
+    {!!  Form::label('costlbl','Category:',['for'=>'icon_prefix'])  !!}
+  
+    
+      <select name="cat_name">
+
+      @foreach($project_categories  as $categories)
+     
+      <option value="{{ $categories->cat_name }}">{{ $categories->cat_name }}</option>
+     
+
+      @endforeach
+    </select>
+    
+ 
+   
+   
+
+  </div>
+
+  </div>
+
+
+
+  <div class="row">
+
+
+  <div class="col m8">
+
   
   
      <div class="input-field">

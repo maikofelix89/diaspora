@@ -5,7 +5,7 @@
  <div class="row" id="contactus">
 <div class="section white">
 <div class="col offset-s1 s5" id="location">
-   <h1 align="center"><i class="mdi-communication-location-on"></i>Head Office</h1>
+   <h1 align="center" id="headtext"><i class="mdi-communication-location-on"></i>Head Office</h1>
   <p>Design Build Factory</p>
   <p>(Off Mombasa Road, Opposite Total Petrol Station, ImaraDaima)</p>
   <p>P.O. Box 16491-00100</p>
@@ -30,7 +30,7 @@
 
 
 <div class="col offset-s4 s4">
-<h1 align="center">Get in touch</h1>
+<h1 align="center" id="headtext">Get in touch</h1>
 <form>
       <div class="row">
        <div class="input-field col s12">

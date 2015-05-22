@@ -9,6 +9,8 @@ use Carbon\Carbon;
 
 use App\Project;
 
+use App\ProjectCategories;
+
 use Request;
 
 
@@ -33,7 +35,11 @@ class ProjectController extends Controller {
 
 	public function create(){
 
-		return view('projectform');
+		$project_categories = ProjectCategories::all();
+
+		
+
+		return view('projectform',compact('project_categories'));
 	}
 
 	public function store(Request $request){
@@ -64,7 +70,7 @@ class ProjectController extends Controller {
 
 
 
-		Project::create(['pname'=>$input['pname'],'pimage'=>$image,'pcost'=>$input['pcost'],'pdesc'=>$input['pdesc']]);
+		Project::create(['pname'=>$input['pname'],'cat_name'=>$input['cat_name'],'pimage'=>$image,'pcost'=>$input['pcost'],'pdesc'=>$input['pdesc']]);
 
 		return redirect('projects');
 
@@ -84,6 +90,12 @@ class ProjectController extends Controller {
 		$projects= Project::FindorFail($id);
 		return view('showproject',compact('projects'));
 
+	}
+
+
+	public function board(){
+
+		return view('admin.dashboard');
 	}
 
 }
