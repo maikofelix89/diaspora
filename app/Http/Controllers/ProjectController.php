@@ -66,13 +66,13 @@ class ProjectController extends Controller {
 		$input['published_at'] = Carbon::now();
 
 		
-
+        $project_categories = ProjectCategories::all();
 
 
 
 		Project::create(['pname'=>$input['pname'],'cat_name'=>$input['cat_name'],'pimage'=>$image,'pcost'=>$input['pcost'],'pdesc'=>$input['pdesc']]);
 
-		return redirect('projects');
+		return view('projectform',compact('project_categories'));
 
 		
 

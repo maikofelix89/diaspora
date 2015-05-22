@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+//Route::get('/', 'WelcomeController@index');
+
+Route::get('/', 'LandingController@index');
 //Route::get('/projects', 'ProjectController@show');
 //Route::get('/projects/create', 'ProjectController@index');
 

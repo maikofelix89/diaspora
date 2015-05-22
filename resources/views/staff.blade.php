@@ -4,11 +4,13 @@
 
 <div class="container">
 
-<div class="row">
-
-
 <h3 align="center" id="headtext">Meet our staff</h3>
 <hr id="line" />
+
+<div class="row" id="dblstaff">
+
+
+
 
 @foreach($staff as $employees)
 

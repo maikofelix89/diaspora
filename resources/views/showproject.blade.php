@@ -1,10 +1,10 @@
 @extends('layout')
 
-@section('content');
+@section('content')
 <div class="container">
 
 <div class="row" id="projectdetails">
-<h2 align="center">{{  $projects->pname  }}</h2>
+<h2 align="center" id="headtext">{{  $projects->pname  }}</h2>
 <div class="col s6">
 
 <div class="card-panel">
@@ -55,5 +55,7 @@
 
 </div><!-- end of row -->
 </div><!-- end of container -->
+
+
 
 @endsection

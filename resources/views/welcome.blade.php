@@ -26,7 +26,7 @@
                    <div class="col-md-12">
 
 
-                  <h1>About Us</h1>
+                  <h2 id="headtext">About Us</h2>
                   <hr class="intro-divider" id="line" />
 
                   <p>Diaspora Design Build Ltd an Architectural and Construction firm 
@@ -39,9 +39,110 @@
             </div>
 
         </div>
+
+        <div class="row" id="services">
+        <div class="container">
+		           <h2 align="center" id="headtext">Services</h2>
+		            <hr class="intro-divider" id="line" />
+		        <div class="col m4">
+				        <div class="card" id="servicescard">
+				            <div class="card-image" id="cardimage">
+				             <img src="../images/arc.jpg" class="responsive-img" />
+				              <span class="card-title"></span>
+				            </div>
+				            <div class="card-content">
+				                 Architectural services
+				              
+				            </div>
+				           
+				          </div><!--- end of services card -->
+				          </div>
+
+				            <div class="col m4">
+
+				           <div class="card" id="servicescard">
+				            <div class="card-image" id="cardimage">
+				             <img src="../images/plan.jpg" class="responsive-img" />
+				              <span class="card-title"></span>
+				            </div>
+				            <div class="card-content">
+				                Master planning
+				              
+				            </div>
+				           
+				          </div><!--- end of services card -->
+				          </div>
+
+				            <div class="col m4">
+
+				           <div class="card" id="servicescard">
+				            <div class="card-image" id="cardimage">
+				             <img src="../images/pm.jpg" class="responsive-img" />
+				              <span class="card-title"></span>
+				            </div>
+				            <div class="card-content">
+				               Project planning and appraisal
+				              
+				            </div>
+				           
+				          </div><!--- end of services card -->
+				          </div>
+				          </div>
+
+		       
+       </div><!-- end of container -->
+
+        </div><!-- end of services row -->
+
+        <div class="row" id="projectsshow">
+        <h2 align="center" id="headtext">Protfolio</h2>
+        <div class="container">
+
+        @foreach($projects as $project)
+
+        <div class="col m4">
+
+			<div class="card" id="projectcard">
+			     <div class="card-image" id="cardimage">
+			             <img src="{{ $project->pimage }}" class="responsive-img" />
+			              <span class="card-title"></span>
+			     </div>
+			     <div class="card-content">
+			           {{ $project->pname }}
+			              
+			     </div>
+			     <div class="card-action">
+			          <a class="btn waves-effect waves-light" href="projects/{{$project->id }}" type="submit" name="action">View More
+			          <i class="mdi-content-send right"></i>
+			          </a>
+			              
+			      </div>
+			</div>
+ 
+
+       </div>
+
+
+
+
+
+        @endforeach
+
+        <div class="col offset-s4">
+
+          <a class="btn waves-effect waves-light" href="/projects" type="submit" name="action">All Projects
+			          <i class="mdi-content-send right"></i></a>
+
+		 </div>
+        
+      </div>
+
+        </div>
     
 
         <!-- tiles section -->
+
+        <!--
 
         <div class="row" id="tiles">
 
@@ -117,9 +218,12 @@
 				                     </div>
 				                     </div>
 				               </div>
+
+
 				                
 
         </div>
+         -->
 <script type="text/javascript">
   
     $(document).ready(function(){

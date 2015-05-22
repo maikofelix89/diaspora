@@ -50,7 +50,7 @@
   <body id="mobile-demo">
   
 
-  <div class="fixed-top">
+  <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo">Diaspora Design</a>

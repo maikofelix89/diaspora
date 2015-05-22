@@ -5,7 +5,7 @@
 <div class="container" >
 
  <div class="row" id="content">
-<h2 align="center">Portfolio</h2>
+<h2 align="center" id="headtext">Portfolio</h2>
 
 
 

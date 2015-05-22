@@ -1,9 +1,10 @@
 @font-face {
     font-family: 'FutstencilSerif';
-    src:url('/assets/fonts/FutstencilSerif.ttf.woff') format('woff'),
-        url('/assets/fonts/assets/FutstencilSerif.ttf.svg#FutstencilSerif') format('svg'),
-        url('/assets/fonts/FutstencilSerif.ttf.eot'),
-        url('/assets/fonts/FutstencilSerif.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('../fonts/FutstencilSerif.ttf.woff') format('woff'),
+        url('../fonts/FutstencilSerif.ttf.svg#FutstencilSerif') format('svg'),
+        url('../fonts/FutstencilSerif.ttf.eot'),
+        url('../fonts/FutstencilSerif.ttf.eot?#iefix') format('embedded-opentype'); 
+
     font-weight: normal;
     font-style: normal;
 }
@@ -211,7 +212,8 @@ display: inline-block;
 }
 
 #projectdetails{
-	height:600px;
+	height:auto;
+	padding-bottom: 20px;
 }
 
 
@@ -242,4 +244,14 @@ display: inline-block;
 #staffimage img{
 	height:250px;
 
+}
+
+#dblstaff{
+	padding-top: 50px;
+}
+
+#services{
+	padding-top: 15px;
+	background-color: #fcfcfc;
+	padding-bottom: 15px;
 }
