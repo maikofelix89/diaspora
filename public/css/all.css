@@ -261,6 +261,15 @@ display: inline-block;
 	background-color: #fcfcfc;
 	padding-bottom: 15px;
 }
+
+
+#admintab{
+	padding-top: 20px;
+}
+
+#test1 , #test2 ,#test3 ,#test4 {
+	padding-top: 20px;
+}
 body{
 	font-family: 'Lato', sans-serif;
    

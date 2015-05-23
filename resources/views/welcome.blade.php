@@ -95,7 +95,7 @@
         </div><!-- end of services row -->
 
         <div class="row" id="projectsshow">
-        <h2 align="center" id="headtext">Protfolio</h2>
+        <h2 align="center" id="headtext">Portfolio</h2>
         <div class="container">
 
         @foreach($projects as $project)

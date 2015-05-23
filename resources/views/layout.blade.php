@@ -8,7 +8,10 @@
     <title>Diaspora Design Build</title>
 
     
-  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="../bower_components/jquery/dist/jquery.min.js"></script> 
+
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-git2.js"></script> -->
 
     <!-- materialize css -->
     <link rel="stylesheet" type="text/css" href="../css/materialize.css">
@@ -36,7 +39,11 @@
     <link rel="stylesheet" type="text/css" href="../bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
 
    
+    
+    
 
+   <!-- material js -->
+   <script type="text/javascript" src="../bower_components/materialize/dist/js/materialize.min.js"></script>
    
 
 
@@ -103,12 +110,7 @@
           </div>
         </footer>
 
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-
-   <!-- material js -->
-   <script type="text/javascript" src="../bower_components/materialize/dist/js/materialize.min.js"></script>
+  
     <!-- scrolling js -->
     <script type="text/javascript" src="../js/scrolling.js"></script>
 
@@ -126,6 +128,8 @@
     });
 
      $('select').material_select();
+
+     
 
 
   });
