@@ -9,7 +9,7 @@
 
     
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script src="../bower_components/jquery/dist/jquery.min.js"></script> 
+     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
 
     <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-git2.js"></script> -->
 
