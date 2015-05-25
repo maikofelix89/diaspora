@@ -1,3 +1,8 @@
+body,html{
+  height:100%;
+}
+
+
 @font-face {
     font-family: 'FutstencilSerif';
     src:url('../fonts/FutstencilSerif.ttf.woff') format('woff'),
@@ -263,4 +268,21 @@ display: inline-block;
 
 #test1 , #test2 ,#test3 ,#test4 {
 	padding-top: 20px;
+}
+
+#action{
+	text-align: right;
+	display: inline-block;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -200px;
+}
+
+.push{
+  height: 200px;
 }

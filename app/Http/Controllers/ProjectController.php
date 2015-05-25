@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Carbon\Carbon;
 
-/* use Illuminate\Http\Request; */
+//use Illuminate\Http\Request;
 
 use App\Project;
 
@@ -91,6 +91,50 @@ class ProjectController extends Controller {
 		return view('showproject',compact('projects'));
 
 	}
+
+	public function edit($id){
+
+		$project_categories = ProjectCategories::all();
+
+		$project=Project::findorFail($id);
+
+         return view ('admin.editproject', compact('project','project_categories'));
+	}
+
+	public function update($id, Request $request){
+
+		$specificproj=Project::findorFail($id);
+
+		$input=Request::all();
+
+		$destinationPath = 'images/';
+
+		$input['published_at'] = Carbon::now();
+
+		$image = Request::file('pimage')->move($destinationPath);
+
+
+		$specificproj->pname=$input['pname'];
+		$specificproj->pimage=$image;
+		$specificproj->pcost=$input['pcost'];
+		$specificproj->pdesc=$input['pdesc'];
+		$specificproj->cat_name=$input['cat_name'];
+
+
+		//return $specificproj;
+
+		$specificproj->save();
+
+		
+
+		return redirect('projects');
+
+
+    }
+
+
+
+	
 
 
 	public function board(){

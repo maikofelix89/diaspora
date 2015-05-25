@@ -9,7 +9,8 @@
 
 <div class="card-panel">
 <img src="../{{ $projects->pimage}}" class="responsive-img materialboxed"/>
-        
+
+
 </div>
 
  
@@ -18,6 +19,8 @@
 
  
 <div class="btn">More Photos</div>
+
+<a class="btn" href="{{ $projects->id }}/edit">Edit</a>
  
 
 

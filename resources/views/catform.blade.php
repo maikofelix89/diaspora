@@ -27,7 +27,7 @@
 
 @endif
 <div class="row" id="projects">
-<h4 align="center">Project Category</h4>
+<h4 align="center" id="headtext">Project Category</h4>
 
 <div class="col s5 offset-s4">
 

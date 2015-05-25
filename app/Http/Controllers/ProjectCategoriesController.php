@@ -13,7 +13,17 @@ use Request;
 
 
 
+
+
 class ProjectCategoriesController extends Controller {
+
+
+	public function index(){
+
+        $cat_list= ProjectCategories::all();
+
+		return view('admin.projectcategories',compact('cat_list'));
+	}
 
 
 	public function create(){
@@ -43,6 +53,45 @@ class ProjectCategoriesController extends Controller {
 
 		
 
+	}
+
+	public function edit($id){
+
+       $categories=ProjectCategories::findorFail($id);
+
+
+
+
+	return view ('admin.editprojcat', compact('categories'));
+
+
+	}
+
+
+	public function update($id , Request $request ){
+
+		$input=Request::all();
+
+
+		$categories=ProjectCategories::findorFail($id);
+
+		
+        $categories->cat_name=$input['cat_name'];
+		
+		$categories->save();
+
+	    $cat_list= ProjectCategories::all();
+
+		return view('admin.projectcategories',compact('cat_list'));
+
+	}
+
+
+	public function show($id){
+
+		$categories=ProjectCategories::findorFail($id);
+
+		return view('admin.projcatlist',compact('categories'));
 	}
 
 }

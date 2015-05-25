@@ -8,10 +8,9 @@
     <title>Diaspora Design Build</title>
 
     
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+ 
 
-    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-git2.js"></script> -->
+   
 
     <!-- materialize css -->
     <link rel="stylesheet" type="text/css" href="../css/materialize.css">
@@ -42,8 +41,6 @@
     
     
 
-   <!-- material js -->
-   <script type="text/javascript" src="../bower_components/materialize/dist/js/materialize.min.js"></script>
    
 
 
@@ -55,6 +52,8 @@
     <![endif]-->
   </head>
   <body id="mobile-demo">
+
+  <div class="wrapper">
   
 
   <div class="navbar-fixed">
@@ -84,6 +83,8 @@
 	@yield('content')
   <!-- footer section -->
 
+  <div class="push"></div>
+
     <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -109,6 +110,15 @@
             </div>
           </div>
         </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+     <!-- <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script> -->
+
+
+   <!-- material js -->
+   <script type="text/javascript" src="../bower_components/materialize/dist/js/materialize.min.js"></script>
 
   
     <!-- scrolling js -->
@@ -140,7 +150,8 @@
    </script>
 
 
-
+ 
+  </div><!-- end of wrapper -->
 
   </body>
 </html>
