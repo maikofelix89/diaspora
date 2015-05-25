@@ -86,11 +86,12 @@
 				            </div>
 				           
 				          </div><!--- end of services card -->
-				          </div>
-				          </div>
+
+				          </div><!-- end of col-m4 -->
+				          </div><!-- end of  container -->
 
 		       
-       </div><!-- end of container -->
+      
 
         </div><!-- end of services row -->
 

@@ -2,14 +2,14 @@
 
 @section('content')
 
-<div class="container" >
+<div class="container">
 
  <div class="row" id="content">
 <h2 align="center" id="headtext">Portfolio</h2>
 
 
 
-@foreach ($projects as $project)
+@foreach($projects as $project)
 
 <div class="col m4">
 

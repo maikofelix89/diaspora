@@ -13,11 +13,17 @@
    
 
     <!-- materialize css -->
-    <link rel="stylesheet" type="text/css" href="../css/materialize.css">
+    
+
+    {!! HTML::style('css/materialize.css') !!} 
+
 
 
     <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="../css/all.css">
+    
+
+    {!! HTML::style('css/all.css') !!} 
+
 
 
     
@@ -25,7 +31,9 @@
     
 
     <!-- font awesome -->
-    <link rel="stylesheet" type="text/css" href="../bower_components/fontawesome/css/font-awesome.min.css">
+     {!! HTML::style('bower_components/fontawesome/css/font-awesome.min.css') !!} 
+
+    
     
 
     
@@ -35,7 +43,8 @@
 
 
     <!-- jasny bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="../bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
+    {!! HTML::style('bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css') !!} 
+   
 
    
     
@@ -112,22 +121,29 @@
         </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+
+     {!! HTML::script('bower_components/jquery/dist/jquery.min.js'); !!}
 
      <!-- <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script> -->
-
+   
 
    <!-- material js -->
-   <script type="text/javascript" src="../bower_components/materialize/dist/js/materialize.min.js"></script>
+   {!! HTML::script('bower_components/materialize/dist/js/materialize.min.js'); !!}
+   
 
   
     <!-- scrolling js -->
-    <script type="text/javascript" src="../js/scrolling.js"></script>
+   
+
+    {!! HTML::script('js/scrolling.js'); !!}
+
 
 
 
     <!-- jasny bootstrap -->
-    <script type="text/javascript" src="../bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+  {!! HTML::script('bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js'); !!}
+    
    <script type="text/javascript">
    
 
