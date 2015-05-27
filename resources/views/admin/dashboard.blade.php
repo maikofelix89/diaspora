@@ -16,8 +16,8 @@
       <ul class="tabs" >
         <li class="tab col s3"><a href="#test1">Categories</a></li>
         <li class="tab col s3"><a class="active" href="#test2">Projects</a></li>
-        <li class="tab col s3"><a href="#test3">Staff</a></li>
-        <li class="tab col s3"><a href="#test4">Vacancies</a></li>
+        <li class="tab col s3"><a href="#test3">Staff & Vacancies</a></li>
+        <li class="tab col s3"><a href="#test4">Calendar</a></li>
       </ul>
     </div>
     <div id="test1" class="col s12">
@@ -42,7 +42,7 @@
 				
 			</a>
 
-						<a href="/projects/create">
+						<a href="/projCategories">
 
 					<div class="col s6">
 
@@ -68,7 +68,7 @@
     </div>
     <div id="test2" class="col s12">
 
-     <a href="/projCategories/create">
+     <a href="/projects/create">
 
 					<div class="col s6">
 
@@ -116,196 +116,149 @@
     </div>
     <div id="test3" class="col s12">
 
-    <a href="/staff/create">
+			    <a href="/staff/create">
 
-					<div class="col s6">
+								<div class="col s6">
 
+										
+
+										 <div class="card-panel" id="adminbtn"> 
+										   <div id="adminactions">
+										   	
+										   	 <i class="mdi-social-person-add large"></i>
+										   	 <p>Add Staff</p>
+										   </div>
+										 	
+										 </div>
+										 	
+										
+
+								</div>
 							
+						</a>
 
-							 <div class="card-panel" id="adminbtn"> 
-							   <div id="adminactions">
-							   	
-							   	 <i class="mdi-social-person-add large"></i>
-							   	 <p>Add Staff</p>
-							   </div>
-							 	
-							 </div>
-							 	
+						<a href="/staff">
+
+								<div class="col s6">
+
+										
+
+										 <div class="card-panel" id="adminbtn"> 
+										   <div id="adminactions">
+										   	
+										   	 <i class="mdi-social-people-outline large"></i>
+										   	 <p>View Staff</p>
+										   </div>
+										 	
+										 </div>
+										 	
+										
+
+								</div>
 							
+						</a>
 
-					</div>
-				
-			</a>
+						 <a href="/staff/create">
 
-			<a href="/staff">
+								<div class="col s6">
 
-					<div class="col s6">
+										
 
+										 <div class="card-panel" id="adminbtn"> 
+										   <div id="adminactions">
+										   	
+										   	 <i class="mdi-content-add large"></i>
+										   	 <p>Post Vacancy</p>
+										   </div>
+										 	
+										 </div>
+										 	
+										
+
+								</div>
 							
+						</a>
 
-							 <div class="card-panel" id="adminbtn"> 
-							   <div id="adminactions">
-							   	
-							   	 <i class="mdi-social-people-outline large"></i>
-							   	 <p>View Staff</p>
-							   </div>
-							 	
-							 </div>
-							 	
+						<a href="/staff">
+
+								<div class="col s6">
+
+										
+
+										 <div class="card-panel" id="adminbtn"> 
+										   <div id="adminactions">
+										   	
+										   	 <i class="mdi-action-work large"></i>
+										   	 <p>View Vacancies</p>
+										   </div>
+										 	
+										 </div>
+										 	
+										
+
+								</div>
 							
-
-					</div>
-				
-			</a>
-
-			 <a href="/staff/create">
-
-					<div class="col s6">
-
-							
-
-							 <div class="card-panel" id="adminbtn"> 
-							   <div id="adminactions">
-							   	
-							   	 <i class="mdi-content-add large"></i>
-							   	 <p>Add Academic Qualifications</p>
-							   </div>
-							 	
-							 </div>
-							 	
-							
-
-					</div>
-				
-			</a>
-
-			<a href="/staff">
-
-					<div class="col s6">
-
-							
-
-							 <div class="card-panel" id="adminbtn"> 
-							   <div id="adminactions">
-							   	
-							   	 <i class="mdi-social-school large"></i>
-							   	 <p>View Academic Qualifications</p>
-							   </div>
-							 	
-							 </div>
-							 	
-							
-
-					</div>
-				
-			</a>
+						</a>
     	
 
 
     </div>
-    <div id="test4" class="col s12">Test 4</div>
-  </div>
+    <div id="test4" class="col s12">
+
+		    <a href="/staff/create">
+
+							<div class="col s6">
+
+									
+
+									 <div class="card-panel" id="adminbtn"> 
+									   <div id="adminactions">
+									   	
+									   	 <i class="mdi-content-add large"></i>
+									   	 <p>Add Calendar Event</p>
+									   </div>
+									 	
+									 </div>
+									 	
+									
+
+							</div>
+						
+					</a>
+
+					<a href="/staff">
+
+							<div class="col s6">
+
+									
+
+									 <div class="card-panel" id="adminbtn"> 
+									   <div id="adminactions">
+									   	
+									   	 <i class="mdi-action-event large"></i>
+									   	 <p>View Events</p>
+									   </div>
+									 	
+									 </div>
+									 	
+									
+
+							</div>
+						
+					</a>
+		    	
+  </div><!-- end of col s12 -->
 
 
- <!--
 
-			 <a href="/projCategories/create">
+ </div><!-- end of row -->
 
-					<div class="col s6">
-
-							
-
-							 <div class="card-panel" id="adminbtn"> 
-							   <div id="adminactions">
-							   	
-							   	 <i class="mdi-action-note-add large"></i>
-							   	 <p>Add Project Categories</p>
-							   </div>
-							 	
-							 </div>
-							 	
-							
-
-					</div>
-				
-			</a>
-
-						<a href="/projects/create">
-
-					<div class="col s6">
-
-							
-
-							 <div class="card-panel" id="adminbtn"> 
-							   <div id="adminactions">
-							   	
-							   	 <i class="mdi-action-store large"></i>
-							   	 <p>View Project Categories</p>
-							   </div>
-							 	
-							 </div>
-							 	
-							
-
-					</div>
-				
-			</a>
-
-  </div>
-  <div class="row">
-
-			 <a href="/projCategories/create">
-
-					<div class="col s6">
-
-							
-
-							 <div class="card-panel" id="adminbtn"> 
-							   <div id="adminactions">
-							   	
-							   	 <i class="mdi-action-note-add large"></i>
-							   	 <p>Add Projects</p>
-							   </div>
-							 	
-							 </div>
-							 	
-							
-
-					</div>
-				
-			</a>
-
-			<a href="/projects">
-
-					<div class="col s6">
-
-							
-
-							 <div class="card-panel" id="adminbtn"> 
-							   <div id="adminactions">
-							   	
-							   	 <i class="mdi-action-note-add large"></i>
-							   	 <p>View Projects</p>
-							   </div>
-							 	
-							 </div>
-							 	
-							
-
-					</div>
-				
-			</a>
-
-			</div>
-			-->
-			<!-- end of row -->
-
-
+ </div><!-- end of row -->
 
   </div><!-- end of col s9 -->
-  </div>
+  </div><!-- end of content -->
 
-</div>
+
 
 
 @endsection

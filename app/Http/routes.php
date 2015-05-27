@@ -38,6 +38,9 @@ Route::resource('projects','ProjectController');
 
 Route::resource('projCategories','ProjectCategoriesController');
 
+
+Route::resource('vacancies'.'VacancyController');
+
 /* Route::get('/portfolio', 'PortfolioController@index');
 
 Route::get('home', 'HomeController@index');
