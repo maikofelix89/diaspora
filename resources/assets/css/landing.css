@@ -15,7 +15,7 @@ body,html{
 }
 
 #header{
-	background-image: url('../images/1.jpg');
+	background-image: url('../images/3.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	height:668px;
@@ -51,7 +51,7 @@ body,html{
 }
 
 .intro{
-	padding-top: 10%;
+	padding-top: 15%;
 	color:#fff;
 	text-align: center;
 	
@@ -285,4 +285,13 @@ display: inline-block;
 
 .push{
   height: 200px;
+}
+
+#slide-out{
+	background-color:#2c3e50;
+	margin-top:70px;
+}
+
+#sidebody{
+	background-color: #34495e;
 }

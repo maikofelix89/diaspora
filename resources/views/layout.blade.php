@@ -74,15 +74,19 @@
         <li><a href="">About Us</a></li>
         <li><a href="">Services</a></li>
         <li><a href="/projects">Portfolio</a></li>
+        <li><a href="/Calendar">Calender</a></li>
+        <li><a href="/Vacancy">Vacancies</a></li>
         <li><a href="/contactus">Contact Us</a></li>
         <li><a href="/staff">Staff</a></li>
       </ul>
       
       <ul class="side-nav" id="">
-         <li><a href="">About Us</a></li>
+       <li><a href="">About Us</a></li>
         <li><a href="">Services</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href="/projects">Portfolio</a></li>
+        <li><a href="/Calendar">Calender</a></li>
+        <li><a href="/Vacancy">Vacancies</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
         <li><a href="/staff">Staff</a></li>
       </ul>
     </div>
@@ -120,12 +124,12 @@
           </div>
         </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+    <!-- jQuery (necessary for Materialize JavaScript plugins) -->
+   
 
-     {!! HTML::script('bower_components/jquery/dist/jquery.min.js'); !!}
+    <!--   {!! HTML::script('../bower_components/jquery/dist/jquery.min.js'); !!} -->
 
-     <!-- <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
    
 
    <!-- material js -->
@@ -154,6 +158,16 @@
     });
 
      $('select').material_select();
+
+
+      $('.datepicker').pickadate({
+       selectMonths: true, // Creates a dropdown to control month
+       selectYears:5, // Creates a dropdown of 15 years to control year
+       formatSubmit: 'yyyy-mm-dd',
+        hiddenName: true
+       
+       });
+        
 
      
 

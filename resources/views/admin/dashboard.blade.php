@@ -158,7 +158,7 @@
 							
 						</a>
 
-						 <a href="/staff/create">
+						 <a href="/Vacancy/create">
 
 								<div class="col s6">
 
@@ -179,7 +179,7 @@
 							
 						</a>
 
-						<a href="/staff">
+						<a href="/Vacancy">
 
 								<div class="col s6">
 
@@ -205,7 +205,7 @@
     </div>
     <div id="test4" class="col s12">
 
-		    <a href="/staff/create">
+		    <a href="/Calendar/create">
 
 							<div class="col s6">
 
@@ -226,7 +226,7 @@
 						
 					</a>
 
-					<a href="/staff">
+					<a href="Calendar/">
 
 							<div class="col s6">
 

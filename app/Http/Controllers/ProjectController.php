@@ -141,5 +141,9 @@ class ProjectController extends Controller {
 
 		return view('admin.dashboard');
 	}
+	public function newboard(){
+
+		return view('admin.dashboardlayout');
+	}
 
 }

@@ -1,11 +1,12 @@
-@extends('layout')
+@extends('admin.dashboardlayout')
 
 
 @section('content')
 
-<div class="row" id="content">
+<div class="row" id="">
 <h3 id="headtext" align="center">Project Categories</h3>
   <div class="container">
+   <div class="col offset-m1 m9">
 
 
       <ul class="collection">
@@ -24,6 +25,7 @@
       @endforeach
        
       </ul>
+    </div>
   
 
   </div><!-- end of container -->

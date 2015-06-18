@@ -1,8 +1,8 @@
-@extends('layout')
+@extends('admin.dashboardlayout')
 
 @section('content')
 
-<div id="content">
+<div id="">
 
 @if($errors->any())
 
