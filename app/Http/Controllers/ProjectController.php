@@ -174,6 +174,8 @@ class ProjectController extends Controller {
 
 	}
 
+	//add more photos form
+
 	public function addphoto($id){
 
 		$project = Project::findorFail($id);
@@ -186,6 +188,8 @@ class ProjectController extends Controller {
 
 
 	}
+
+	//adds more photos to a section
 
 	public function savephoto(Request $request){
 

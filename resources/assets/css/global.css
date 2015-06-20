@@ -6,14 +6,19 @@ body{
 #content{
     margin-top:-20px;
 }
+.navbar-fixed {
+    height: 0px;
 
-nav{
-    background-color:#6F2C2C;
+}
+
+#mynavbar{
+    background-color:transparent;
+     border-style: none;
   
     
 }
 
-nav a {
+#mynavbar a {
     color: #FFF !important;
 }
 

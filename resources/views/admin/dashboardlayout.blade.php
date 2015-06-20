@@ -18,11 +18,19 @@
     {!! HTML::style('css/materialize.css') !!} 
 
 
+   
+
 
     <!-- custom css -->
     
 
     {!! HTML::style('css/all.css') !!} 
+
+     <!-- navbar css -->
+    
+
+    {!! HTML::style('css/navbar.css') !!}
+
 
 
 
@@ -80,7 +88,7 @@
   
 
   <div class="navbar-fixed">
-  <nav>
+  <nav id="mynav">
     <div class="nav-wrapper">
       <a href="/" class="brand-logo">Diaspora Design</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>

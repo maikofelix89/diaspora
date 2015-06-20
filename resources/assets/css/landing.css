@@ -18,7 +18,7 @@ body,html{
 	background-image: url("../images/1.jpg");
 background-size: cover;
 background-attachment: fixed;
-height: 668px;
+height:668px;
 }
 /*.slider .slides {
     background-color:transparent;

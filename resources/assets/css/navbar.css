@@ -1,0 +1,15 @@
+.navbar-fixed {
+    height: 0px;
+
+}
+
+#mynav{
+    background-color:#6F2C2C;
+    
+  
+    
+}
+
+#mynav a {
+    color: #FFF !important;
+}

@@ -24,7 +24,7 @@ body,html{
 	background-image: url("../images/1.jpg");
 background-size: cover;
 background-attachment: fixed;
-height: 668px;
+height:668px;
 }
 /*.slider .slides {
     background-color:transparent;
@@ -322,14 +322,19 @@ body{
 #content{
     margin-top:-20px;
 }
+.navbar-fixed {
+    height: 0px;
 
-nav{
-    background-color:#6F2C2C;
+}
+
+#mynavbar{
+    background-color:transparent;
+     border-style: none;
   
     
 }
 
-nav a {
+#mynavbar a {
     color: #FFF !important;
 }
 

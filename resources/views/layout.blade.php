@@ -35,7 +35,10 @@
 
 
 
-    
+     <!-- scrolling js -->
+   
+
+    {!! HTML::script('js/scrolling.js'); !!}
 
     
 
@@ -75,7 +78,7 @@
   
 
   <div class="navbar-fixed">
-  <nav>
+  <nav id="mynavbar">
     <div class="nav-wrapper">
       <a href="/" class="brand-logo">Diaspora Design</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -146,10 +149,7 @@
    
 
   
-    <!-- scrolling js -->
    
-
-    {!! HTML::script('js/scrolling.js'); !!}
 
 
 
