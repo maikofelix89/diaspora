@@ -95,6 +95,8 @@
       </ul>
       
       <ul id="slide-out" class="side-nav fixed">
+      <li><i class="large mdi-action-account-circle" id="usericon"></i></li>
+
    
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
@@ -118,7 +120,7 @@
           <div class="collapsible-body" id="sidebody">
             <ul>
               <li><a href="/projects/create">Create</a></li>
-              <li><a href="/projects">View</a></li>
+              <li><a href="/adminprojlist">View</a></li>
              
             </ul>`
           </div>

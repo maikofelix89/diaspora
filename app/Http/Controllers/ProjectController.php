@@ -13,6 +13,8 @@ use App\ProjectCategories;
 
 use Request;
 
+use App\Photos;
+
 
 
 class ProjectController extends Controller {
@@ -22,7 +24,9 @@ class ProjectController extends Controller {
 	public function index(){
 
 		
-		$projects = Project::all();;
+		$projects = Project::all();
+
+
 
 		return view('projects', compact('projects'));
 
@@ -88,13 +92,18 @@ class ProjectController extends Controller {
 		//show a specific project
 		
 		$projects= Project::FindorFail($id);
-		return view('showproject',compact('projects'));
+		
+		$photos = Photos::where('projid', '=',$projects->id)->get();
+
+		
+		return view('showproject',compact('projects','photos'));
 
 	}
 
 	public function edit($id){
 
 		$project_categories = ProjectCategories::all();
+
 
 		$project=Project::findorFail($id);
 
@@ -133,7 +142,19 @@ class ProjectController extends Controller {
     }
 
 
+  public function destroy($id){
+  	$projects = Project::all();
+  	$project = Project::findorFail($id);
+  	$project->delete();
+  	
 
+     return view('admin.dashboardlayout');
+		
+
+  	
+
+
+  }
 	
 
 
@@ -144,6 +165,62 @@ class ProjectController extends Controller {
 	public function newboard(){
 
 		return view('admin.dashboardlayout');
+	}
+
+
+	public function adminprojlist(){
+		  $projects=Project::all();
+		 return  view('admin.adminprojlist',compact('projects'));
+
+	}
+
+	public function addphoto($id){
+
+		$project = Project::findorFail($id);
+
+
+
+		
+
+		return view('admin.addprojectphotos',compact('project'));
+
+
+	}
+
+	public function savephoto(Request $request){
+
+		$destinationPath = 'images/';
+
+
+
+       
+
+        $image = Request::file('image')->move($destinationPath);
+
+       
+
+       
+
+
+      
+		$input = Request::all();
+
+		$input['published_at'] = Carbon::now();
+
+		
+        $photo = Photos::all();
+
+      
+
+
+
+		Photos::create(['projid'=>$input['projid'],'section'=>$input['section'],'description'=>$input['description'],'image'=>$image]);
+
+		  $projects=Project::all();
+		 return  view('admin.adminprojlist',compact('projects'));
+
+
+
 	}
 
 }

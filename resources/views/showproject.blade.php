@@ -18,9 +18,9 @@
  
 
  
-<div class="btn">More Photos</div>
+<div class="btn" id="morebutton">More Photos</div>
 
-<a class="btn" href="{{ $projects->id }}/edit">Edit</a>
+
  
 
 
@@ -57,7 +57,41 @@
   </div>
 
 </div><!-- end of row -->
-</div><!-- end of container -->
+<div class="row" id="morephotos" style="display:none">
+<div class="divider"></div>
+<h4 align="center" id="headtext">More Photos</h4>
+
+ @foreach($photos as $photo)
+ <div class="col m4">
+   <div class="card">
+    <div class="card-image">
+   <img src="../{{$photo->image}}" />
+   </div>
+    <div class="card-content">
+    <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#{{ $photo->id }}">View</a>
+    </div>
+
+   </div>
+   <div id="{{ $photo->id }}" class="modal mymodal">
+    <div class="modal-content">
+      <img src="../{{$photo->image}}" height="270" width="auto"/>
+    </div>
+    <h4 align="center" id="headtext">Description</h4>
+
+   {{$photo->description}}
+   
+  
+  </div>
+   </div><!-- end of col m4 -->
+   <!-- Modal Structure -->
+   
+  
+
+ @endforeach
+</div>
+</div>
+
 
 
 

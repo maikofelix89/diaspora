@@ -35,7 +35,22 @@ Route::post('/projectcatform', 'ProjectCategoriesController@store');
 
 Route::post('/stafform', 'StaffController@store');
 
+//add more project photos
+
+Route::post('/photoform', 'ProjectController@savephoto');
+
+
+
+//add more project photos
+Route::get('/projects/{projects}/addphoto','ProjectController@addphoto');
+
+
+
 Route::post('/addvacancy', 'VacancyController@store');
+
+Route::get('/adminprojlist','ProjectController@adminprojlist');
+
+
 
 
 

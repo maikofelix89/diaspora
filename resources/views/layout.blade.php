@@ -26,6 +26,15 @@
 
 
 
+    <!-- jQuery (necessary for Materialize JavaScript plugins) -->
+   
+
+      <!-- {!! HTML::script('bower_components/jquery/dist/jquery.min.js'); !!}  -->
+
+      <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+
     
 
     
@@ -124,16 +133,16 @@
           </div>
         </footer>
 
-    <!-- jQuery (necessary for Materialize JavaScript plugins) -->
-   
-
-    <!--   {!! HTML::script('../bower_components/jquery/dist/jquery.min.js'); !!} -->
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    
    
 
    <!-- material js -->
    {!! HTML::script('bower_components/materialize/dist/js/materialize.min.js'); !!}
+
+
+   <!-- fluxbox slider -->
+   {!! HTML::script('bower_components/Flux-Slider/js/flux.min.js'); !!}
+  
    
 
   
@@ -157,6 +166,13 @@
       accordion : false
     });
 
+    $(function(){
+    window.myFlux = new flux.slider('#slider', {
+        autoplay: false,
+        pagination: true
+    });
+});
+
      $('select').material_select();
 
 
@@ -166,6 +182,13 @@
        formatSubmit: 'yyyy-mm-dd',
         hiddenName: true
        
+       });
+
+       $('.modal-trigger').leanModal();
+
+       $('#morebutton').click(function(){
+          $('#morephotos').toggle();
+
        });
         
 

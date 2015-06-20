@@ -4,19 +4,35 @@
 <!-- header section -->
 
   <div class="row" id="header">
+  
 
-    <div class="intro">
+    
+     <div class="intro">
 
      <h1 id="pencilfont" class="animated bounceInLeft">Diaspora Design Build</h1>
        <h3 class="animated bounceInDown">Architectural Firm</h3>
 
+       </div>
+
+         <!--
+        <div id="container">
+
+         <div id="slider">
+		              <img src="images/slide1.jpg"/>
+		              <img src="images/08.jpg" />
+		             
+		              <img src="images/DSC05890.JPG"  />
+	     </div>
+	     </div>
+	      -->
 
 
-    </div>
+
+  
 
     
 
-  </div>
+  </div><!-- end of header -->
 
         <!-- about us section -->
 
@@ -25,13 +41,17 @@
             <div class="container">
                    <div class="col-md-12">
 
-
+                
                   <h2 id="headtext">About Us</h2>
                   <hr class="intro-divider" id="line" />
 
                   <p>Diaspora Design Build Ltd an Architectural and Construction firm 
                   built on strong work ethic, attention to design and strong client relationships, 
                   has been in practise since the year 2002.</p>
+
+                 
+
+                
 
 
 
@@ -234,6 +254,9 @@
         transition: 0.5
 
       });
+      $(function(){
+		window.myFlux = new flux.slider('#slider');
+	});
     });
 </script>
 

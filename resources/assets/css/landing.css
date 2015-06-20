@@ -15,16 +15,20 @@ body,html{
 }
 
 #header{
-	background-image: url('../images/3.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	height:668px;
+	background-image: url("../images/1.jpg");
+background-size: cover;
+background-attachment: fixed;
+height: 668px;
 }
-.slider .slides {
+/*.slider .slides {
     background-color:transparent;
     margin: 0px;
     height: 668px;
 }
+*/
+
+
+
 
 
 
@@ -294,4 +298,13 @@ display: inline-block;
 
 #sidebody{
 	background-color: #34495e;
+}
+
+#usericon{
+	text-align: center;
+}
+
+.mymodal{
+	
+	text-align: center;
 }

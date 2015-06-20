@@ -163,8 +163,20 @@
 
 {!!  Form::close()  !!}
 
+
+
 </div><!-- end of col-sm-offset-3 col-sm-5  -->
 </div><!-- end of row -->
+<div class="row">
+<div class="col offset-m3 col m8">
+<!-- delete form -->
+{!!  Form::open(['method'=>'DELETE', 'action' => ['ProjectController@destroy', $project->id]]) !!}
+{!!  Form::submit('Delete Project',['class' =>'btn'])  !!}
+{!!  Form::close()  !!}
+
+<!-- end of delete form -->
+</div>
+</div>
 
 
 </div>
