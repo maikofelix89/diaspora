@@ -38,7 +38,7 @@
      <!-- scrolling js -->
    
 
-    {!! HTML::script('js/scrolling.js'); !!}
+   <!-- {!! HTML::script('js/scrolling.js'); !!} -->
 
     
 
