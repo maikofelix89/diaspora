@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Carbon\Carbon;
 
+
 //use Illuminate\Http\Request;
 
 use App\Project;
@@ -24,9 +25,9 @@ class ProjectController extends Controller {
 	public function index(){
 
 		
-		$projects = Project::all();
+		$projects = Project::paginate(3);
 
-
+           
 
 		return view('projects', compact('projects'));
 
@@ -41,9 +42,11 @@ class ProjectController extends Controller {
 
 		$project_categories = ProjectCategories::all();
 
+		$user= \Auth::user();
+
 		
 
-		return view('projectform',compact('project_categories'));
+		return view('projectform',compact('project_categories','user'));
 	}
 
 	public function store(Request $request){
@@ -72,11 +75,13 @@ class ProjectController extends Controller {
 		
         $project_categories = ProjectCategories::all();
 
+        $user= \Auth::user();
 
 
-		Project::create(['pname'=>$input['pname'],'cat_name'=>$input['cat_name'],'pimage'=>$image,'pcost'=>$input['pcost'],'pdesc'=>$input['pdesc']]);
 
-		return view('projectform',compact('project_categories'));
+		Project::create(['pname'=>$input['pname'],'cat_name'=>$input['cat_name'],'client'=>$input['client'],'pimage'=>$image,'pcost'=>$input['pcost'],'pdesc'=>$input['pdesc']]);
+
+		return view('projectform',compact('project_categories','user'));
 
 		
 
@@ -102,12 +107,14 @@ class ProjectController extends Controller {
 
 	public function edit($id){
 
+		  $user= \Auth::user();
+
 		$project_categories = ProjectCategories::all();
 
 
 		$project=Project::findorFail($id);
 
-         return view ('admin.editproject', compact('project','project_categories'));
+         return view ('admin.editproject', compact('project','project_categories','user'));
 	}
 
 	public function update($id, Request $request){
@@ -124,6 +131,7 @@ class ProjectController extends Controller {
 
 
 		$specificproj->pname=$input['pname'];
+		$specificproj->client=$input['client'];
 		$specificproj->pimage=$image;
 		$specificproj->pcost=$input['pcost'];
 		$specificproj->pdesc=$input['pdesc'];
@@ -143,6 +151,7 @@ class ProjectController extends Controller {
 
 
   public function destroy($id){
+  	$user= \Auth::user();
   	$projects = Project::all();
   	$project = Project::findorFail($id);
   	$project->delete();
@@ -164,19 +173,23 @@ class ProjectController extends Controller {
 	}
 	public function newboard(){
 
-		return view('admin.dashboardlayout');
+		$user= \Auth::user();
+
+		return view('admin.dashboardlayout',compact('user'));
 	}
 
 
 	public function adminprojlist(){
-		  $projects=Project::all();
-		 return  view('admin.adminprojlist',compact('projects'));
+		$user= \Auth::user();
+		  $projects=Project::paginate(4);
+		 return  view('admin.adminprojlist',compact('projects','user'));
 
 	}
 
 	//add more photos form
 
 	public function addphoto($id){
+		$user= \Auth::user();
 
 		$project = Project::findorFail($id);
 
@@ -184,7 +197,7 @@ class ProjectController extends Controller {
 
 		
 
-		return view('admin.addprojectphotos',compact('project'));
+		return view('admin.addprojectphotos',compact('project','user'));
 
 
 	}
@@ -192,6 +205,7 @@ class ProjectController extends Controller {
 	//adds more photos to a section
 
 	public function savephoto(Request $request){
+		$user= \Auth::user();
 
 		$destinationPath = 'images/';
 
@@ -221,7 +235,10 @@ class ProjectController extends Controller {
 		Photos::create(['projid'=>$input['projid'],'section'=>$input['section'],'description'=>$input['description'],'image'=>$image]);
 
 		  $projects=Project::all();
+
 		 return  view('admin.adminprojlist',compact('projects'));
+
+       
 
 
 

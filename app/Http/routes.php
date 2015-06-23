@@ -11,6 +11,16 @@
 |
 */
 
+
+// Authentication routes...
+Route::get('/login', 'Auth\AuthController@getLogin');
+Route::post('/login', 'Auth\AuthController@postLogin');
+Route::get('/logout', 'Auth\AuthController@getLogout');
+
+// Registration routes...
+Route::get('/register', 'Auth\AuthController@getRegister');
+Route::post('/register', 'Auth\AuthController@postRegister');
+
 //Route::get('/', 'WelcomeController@index');
 
 Route::get('/', 'LandingController@index');
@@ -18,37 +28,15 @@ Route::get('/', 'LandingController@index');
 //Route::get('/projects/create', 'ProjectController@index');
 
 
-Route::get('/adminindex','VacancyController@adminindex');
+
 
 
 Route::get('contactus','ContactusController@index');
 
 Route::Resource('staff','StaffController');
 
-Route::get('dashboard','ProjectController@board');
-Route::get('admindashboard','ProjectController@newboard');
+Route::resource('Vacancy','VacancyController');
 
-//post forms
-Route::post('/projectform', 'ProjectController@store');
-
-Route::post('/projectcatform', 'ProjectCategoriesController@store');
-
-Route::post('/stafform', 'StaffController@store');
-
-//add more project photos
-
-Route::post('/photoform', 'ProjectController@savephoto');
-
-
-
-//add more project photos
-Route::get('/projects/{projects}/addphoto','ProjectController@addphoto');
-
-
-
-Route::post('/addvacancy', 'VacancyController@store');
-
-Route::get('/adminprojlist','ProjectController@adminprojlist');
 
 
 
@@ -59,12 +47,73 @@ Route::resource('projects','ProjectController');
 
 Route::resource('projCategories','ProjectCategoriesController');
 
-
-Route::resource('Vacancy','VacancyController');
-
 Route::resource('Calendar','CalendarController');
 
+
+
+
+
+
+//checks if user is authenticated,allows or redirects to login
+
+Route::group(['middleware' => 'auth'], function () {
+
+	Route::get('admindashboard', [
+    'as' => 'dashboard', 
+    'uses' => 'ProjectController@newboard',
+]);
+
+	
+
+	Route::get('/adminprojlist','ProjectController@adminprojlist');
+
+	//add more project photos
+    Route::get('/projects/{projects}/addphoto','ProjectController@addphoto');
+
+
+	
+	Route::get('/projects/create', 'ProjectController@create');
+     
+     //add more project photos
+	Route::post('/photoform', 'ProjectController@savephoto');
+
+	Route::get('/staff/create','StaffController@create');
+
+	Route::get('/projCategories/create',[
+		 'as' => 'projCategories',
+		'uses' => 'ProjectCategoriesController@create']);
+	Route::get('/Vacancy/create','VacancyController@create');
+
+	Route::get('/projCategories/create','ProjectCategoriesController@create');
+
+	Route::get('/projCategories','ProjectCategoriesController@index');
+
+
+//post forms
+Route::post('/projectform', 'ProjectController@store');
+
+Route::post('/projectcatform', 'ProjectCategoriesController@store');
+
+Route::post('/stafform', 'StaffController@store');
+
+Route::post('/addvacancy', 'VacancyController@store');
+
 Route::post('/addcalendar', 'CalendarController@store');
+
+	
+
+
+	});
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,9 +121,11 @@ Route::post('/addcalendar', 'CalendarController@store');
 
 Route::get('home', 'HomeController@index');
 
+*/
+
 Route::controllers([
-	'auth' => 'Auth\AuthController',z
-	'password' => 'Auth\PasswordController', f
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController', 
 ]);
 
-*/
+

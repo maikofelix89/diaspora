@@ -37,14 +37,14 @@
     </li>
     <li>
       <div class="collapsible-header ">Client</div>
-      <div class="collapsible-body"><p></p></div>
+      <div class="collapsible-body"><p> {{$projects->client}}</p></div>
     </li>
     <li>
     <li>
       <div class="collapsible-header">Year and Cost</div>
       <div class="collapsible-body">
         <p></p>
-      <p>{{ $projects->pcost}}</p>
+      <p>Sh {{ number_format($projects->pcost) }}</p>
       </div>
     </li>
     <li>
@@ -63,11 +63,15 @@
 
  @foreach($photos as $photo)
  <div class="col m4">
-   <div class="card">
+   <div class="card" id="sectioncard">
     <div class="card-image">
    <img src="../{{$photo->image}}" />
    </div>
+   
+    <h6 align="center">{{$photo->section}}</h6>
+   
     <div class="card-content">
+   
     <!-- Modal Trigger -->
   <a class="waves-effect waves-light btn modal-trigger" href="#{{ $photo->id }}">View</a>
     </div>
@@ -75,6 +79,7 @@
    </div>
    <div id="{{ $photo->id }}" class="modal mymodal">
     <div class="modal-content">
+    <h4 align="center" id="headtext">{{$photo->section}}</h4>
       <img src="../{{$photo->image}}" height="270" width="auto"/>
     </div>
     <h4 align="center" id="headtext">Description</h4>

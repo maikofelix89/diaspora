@@ -58,6 +58,7 @@
 
   </div>
 
+
   <div class="row">
 
 
@@ -79,6 +80,26 @@
  
    
    
+
+  </div>
+
+  </div>
+  <div class="row">
+
+
+  <div class="col m8">
+
+  
+  
+     <div class="input-field">
+ 
+
+   {!!  Form::label('clientlbl','Client:',['for'=>'icon_prefix'])  !!}
+
+  
+
+  {!!  Form::text('client',null,['class' => 'form-control validate'])  !!}
+  </div>
 
   </div>
 

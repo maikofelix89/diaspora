@@ -15,7 +15,7 @@
 
 <div class="card" id="projectcard">
             <div class="card-image" id="cardimage">
-             <img src="{{ $project->pimage }}" class="responsive-img" />
+             <img src="../{{ $project->pimage }}" class="responsive-img" />
               <span class="card-title"></span>
             </div>
             <div class="card-content">
@@ -23,7 +23,7 @@
               
             </div>
             <div class="card-action">
-             <a class="btn waves-effect waves-light" href="projects/{{$project->id }}" type="submit" name="action">View More
+             <a class="btn waves-effect waves-light" href="../projects/{{$project->id }}" type="submit" name="action">View More
     <i class="mdi-content-send right"></i>
   </a>
               
@@ -63,5 +63,10 @@
 
 </div>
 
+<div class="row">
+<div class="col offset-m5">
+{!! $projects->render() !!}
+</div>
+</div>
 
 @endsection

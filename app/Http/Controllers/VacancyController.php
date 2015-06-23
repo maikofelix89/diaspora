@@ -11,6 +11,8 @@ use Request;
 
 
 
+
+
 class VacancyController extends Controller {
 
 	//show vacancies
@@ -27,8 +29,11 @@ class VacancyController extends Controller {
 	//post a vacancy
 
 	public function create(){
+		  $user= \Auth::user();
 
-		return view ('admin.addvacancy');
+		return view ('admin.addvacancy',compact('user'));
+
+
 	}
 
 

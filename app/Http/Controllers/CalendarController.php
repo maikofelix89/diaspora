@@ -24,8 +24,9 @@ class CalendarController extends Controller {
 	//create a calendar event
 
 	public function create(){
+		  $user= \Auth::user();
 
-		return view ('admin.addcalendar');
+		return view ('admin.addcalendar',compact('user'));
 	}
 
 

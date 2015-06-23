@@ -18,6 +18,7 @@ class CreateProjectsTable extends Migration {
 			$table->text('pname');
 			$table->text('cat_name');
 			$table->text('pdesc');
+			$table->text('client');
 			$table->text('pcost');
 			$table->text('pimage');
 			$table->timestamps();

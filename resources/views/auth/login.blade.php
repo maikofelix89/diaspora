@@ -1,15 +1,15 @@
-@extends('app')
+@extends('layout')
 
 @section('content')
-<div class="container-fluid">
+<div class="container">
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
+		<div class="col offset-m2 m8">
+			<div class="card-panel">
 				<div class="panel-heading">Login</div>
-				<div class="panel-body">
+				<div class="card-content">
 					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
+						<div class="card-panel" id="failedlogin">
+							<strong class="red accent">Whoops!</strong> There were some problems with your input.<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
 									<li>{{ $error }}</li>

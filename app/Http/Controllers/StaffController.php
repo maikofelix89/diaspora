@@ -26,8 +26,9 @@ class StaffController extends Controller {
 
 
 	public function create(){
+		  $user= \Auth::user();
 
-		 return view('admin.addstaff');
+		 return view('admin.addstaff',compact('user'));
 	}
 
 

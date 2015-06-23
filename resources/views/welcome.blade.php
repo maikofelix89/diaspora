@@ -10,6 +10,7 @@
      <div class="intro">
 
      <h1 id="pencilfont" class="animated bounceInLeft">Diaspora Design Build</h1>
+    
        <h3 class="animated bounceInDown">Architectural Firm</h3>
 
        </div>

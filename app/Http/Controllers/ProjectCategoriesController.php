@@ -21,14 +21,16 @@ class ProjectCategoriesController extends Controller {
 	public function index(){
 
         $cat_list= ProjectCategories::all();
+        $user= \Auth::user();
 
-		return view('admin.projectcategories',compact('cat_list'));
+		return view('admin.projectcategories',compact('cat_list','user'));
 	}
 
 
 	public function create(){
+	   $user= \Auth::user();
        
-      return view('catform');
+      return view('catform',compact('user'));
 
 	}
 
@@ -56,19 +58,21 @@ class ProjectCategoriesController extends Controller {
 	}
 
 	public function edit($id){
+	   $user= \Auth::user();
 
        $categories=ProjectCategories::findorFail($id);
 
 
 
 
-	return view ('admin.editprojcat', compact('categories'));
+	return view ('admin.editprojcat', compact('categories','user'));
 
 
 	}
 
 
 	public function update($id , Request $request ){
+		  $user= \Auth::user();
 
 		$input=Request::all();
 
@@ -82,16 +86,17 @@ class ProjectCategoriesController extends Controller {
 
 	    $cat_list= ProjectCategories::all();
 
-		return view('admin.projectcategories',compact('cat_list'));
+		return view('admin.projectcategories',compact('cat_list','user'));
 
 	}
 
 
 	public function show($id){
+		 $user= \Auth::user();
 
 		$categories=ProjectCategories::findorFail($id);
 
-		return view('admin.projcatlist',compact('categories'));
+		return view('admin.projcatlist',compact('categories','user'));
 	}
 
 }

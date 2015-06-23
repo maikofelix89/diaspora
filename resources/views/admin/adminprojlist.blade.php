@@ -19,7 +19,7 @@
       <div class="card-panel">
       <div class="row">
         <div class="col m6">
-            <img src="{{$list->pimage}}" height="100" width="100" />
+            <img src="../{{$list->pimage}}" height="100" width="100" />
         </div>
         <div class="col m6">
          {{ $list->id }} .{{ $list->pname }}
@@ -46,6 +46,11 @@
   
 
   </div><!-- end of container -->
+<div class="row">
+<div class="col offset-m5">
+{!! $projects->render() !!}
+</div>
+</div>
 
 </div>
 

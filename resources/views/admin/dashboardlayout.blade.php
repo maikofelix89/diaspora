@@ -104,6 +104,7 @@
       
       <ul id="slide-out" class="side-nav fixed">
       <li><i class="large mdi-action-account-circle" id="usericon"></i></li>
+      <li >{{ $user->name }}</li>
 
    
     <li class="no-padding">
@@ -174,6 +175,14 @@
              
             </ul>`
           </div>
+        </li>
+      </ul>
+    </li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header" href="/logout">Log Out <i class="mdi-action-settings-power large"></i></a>
+         
         </li>
       </ul>
     </li>
